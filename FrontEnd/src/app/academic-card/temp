@@ -1,0 +1,120 @@
+<div class="row">
+    <div class="col-lg-4">
+        <div class="artboard">
+            <!-- card1 -->
+            <div class="card">
+
+                <div class="card__side card__side--back">
+
+                    <div class="card__details">
+                        <ul>
+                            <li>Free training on industrial skills with global leaders like Microsoft, Oracle Academy, Google, Salesforce, AWS, and AAU in IR 4.0 technology domain.</li>
+                            <li>Students from partner institutions benefit from the learning enrichment programs like ICSET, Techathlon, and Student Top 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__title">As <br><br>A <br><br> Student</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="artboard">
+                        <!-- card2 -->
+
+            <div class="card">
+
+                <div class="card__side card__side--back">
+                    
+                    <div class="card__details">
+                        <ul>
+                            <li>Access to ICTAK corporate partner pre-programs and events.S</li>
+                            <li>Employability Quotient Test (EQT) to all the students to know their industrial skills.</li>
+                            <li>Support for educators on partner program curriculum delivery and integration.</li>
+                            <li>Connection and support to virtual and on-campus events.</li>
+                            <li>Joint PR opportunities with ICT Academy of Kerala.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__title">As  <br><br> An  <br><br>Institution</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="artboard">
+            <!-- card3-->
+            <div class="card">
+
+                <div class="card__side card__side--back">
+
+                    <div class="card__details">
+                        <ul>
+                            <li>Faculty Benefits Access to Partner Curriculum.</li>
+                            <li>Faculty development program from Salesforce, Oracle Academy, Google, and Microsoft.</li>
+                            <li>Industrial visit. Opportunity to see, interact, and experience the industry innovations.</li>
+                            <li>Opportunity to publish their works in our international magazine.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__title">As  <br><br> A  <br><br> Faculty</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+style
+
+
+.card__theme-box p{
+    font-size: 30px!important;
+font-weight: 400;  
+ align-self: center !important;
+    font-family:fantasy !important;
+    letter-spacing: 2px !important;
+    color: rgb(12, 8, 44);
+    text-shadow: 0 5px 3px #ffffff, 0 0 5px #ffffff;
+    /* text-decoration:overline; */
+
+}
+
+.card_theme-box{
+
+    align-items: center;
+    align-content: center;
+}
+
+.card__details ul li{
+    font-size: 12px !important;
+    font-family: 'Roboto';
+}
+
+.card {
+    box-shadow: 8px 12px 29px 0px #8d8e8f;}
+
+
+

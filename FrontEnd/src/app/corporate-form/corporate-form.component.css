@@ -1,0 +1,16 @@
+
+
+.add1{
+    display: flex;
+    justify-content: center;
+}
+.add1 h1{
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin: 50px 0px 50px 0px ;
+}
+
+.box1{
+    height:100px !important;
+}
+

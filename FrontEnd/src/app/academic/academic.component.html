@@ -1,0 +1,142 @@
+<app-head-nav></app-head-nav>
+<div class="academic">
+    <section class="banner_main">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="text-bg">
+                        <h1>Premium<br> Membership</h1>
+                        <p>ICT Academy of Kerala (ICTAK) is pleased to offer its Premium Memberships to selected
+                            Engineering
+                            , Science & Management Institutions and Polytechnics in the state. Through the programme,
+                            ICTAK
+                            will support its members institution’s Faculty members, Students and Staffs with quality
+                            training resources, certifications and Industry immersions on IR4.0 Technologies, and
+                            thereby
+                            enabling them to reach their Academic and Career potential. </p>
+                        <div class="middle">
+                            <button class="btn btn1 ">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="text-img">
+                        <figure><img src="assets/images/doodle3.jpg" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+    <!-- Hosting -->
+    <div  class="hosting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>About The Program</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="web_hosting">
+                        <figure><img src="assets/images/doodle23.png" height="600px" width="600px"
+                                style="border-radius: 2px;" alt="#" /></figure>
+                        <p>ICT Academy of Kerala is forming a Premium membership programme with selected Engineering/
+                            Science/ Management institutions in the state. The institutions will be selected based on a
+                            set
+                            of criteria, through an online application form from the interested colleges. The submission
+                            will be scrutinized by the ICTAK administration office and if required, will interact with
+                            the
+                            applying institutions for obtaining clarifications. Selected institutions will be provided
+                            with
+                            one year membership and will be provided with one year membership and will be supported by
+                            the
+                            ICTAK on a set of activities that will help the students, teachers and institutions at
+                            large.
+                            The membership will be free for selected institutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Hosting -->
+    <!-- counter  -->
+    <section class="counters">
+        <div class="row ">
+            <div class="col-2">
+                <i class="fa fa-seedling fa-4x"></i><br><br>
+                <div class="counter" data-target="60000">{{facultydev}}</div><br>
+                <h3>Faculty Development Program</h3>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-file-code-o fa-4x"></i><br><br>
+                <div class="counter" data-target="15000">{{fullstack}}</div><br>
+                <h3>Full Stack Development</h3>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-line-chart fa-4x"></i><br><br>
+                <div class="counter" data-target="9000">{{salesforce}}</div><br>
+                <h3>Sales Force</h3>
+            </div>
+            <div class="col-2">
+                <i class="fas fa-gears fa-4x"></i><br><br>
+                <div class="counter" data-target="5000">{{microskills}}</div><br>
+                <h3>Micro Skills</h3>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-school fa-4x"></i><br><br>
+                <div class="counter" data-target="5000">{{internship}}</div><br>
+                <h3>Virtual Internship</h3>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-book fa-4x"></i><br><br>
+                <div class="counter" data-target="5000">{{otherprog}}</div><br>
+                <h3>Other Programs</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- counter ends -->
+
+    <!-- why -->
+    <div id="why" class="why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Why you should choose </h2>
+                    </div>
+                </div>
+            </div>
+            <app-academic-card></app-academic-card>
+        </div>
+    </div>
+    <!-- end why -->
+
+    <!-- partners -->
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6  first-box">
+                    <h1> Meet our Technology Partners |</h1>
+                </div>
+
+                <div class="col-6 second-box">
+                    <div class="row1">
+                        <div *ngFor="let partner of partners" class="b">
+                            <img src={{partner}}>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,138 @@
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image""text""stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+}
+
+.card-image {
+  grid-area: image;
+}
+
+.card-text {
+  grid-area: text;
+}
+
+.card-stats {
+  grid-area: stats;
+}
+
+.card-image {
+  grid-area: image;
+background: url("https://www.popsci.com/uploads/2019/02/11/L4HPJZGI5NXV3XVM2WEXRXXZP4.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: #007FFF;
+  font-size: 13px;
+}
+
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #bb0710;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.cardbody{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+    background:url();
+    /* overflow: hidden; */
+}
+.cardheader{
+  text-align: center;
+    margin-bottom: px;
+}
+.container1{
+  background-color:#232d39 ;
+  margin-bottom: -50px;
+}
+
+
+.section-heading {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #007FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-heading h2 em {
+  font-style: normal;
+  color: #f5f6f8;
+}
+
+.section-heading img {
+  margin: 20px auto;
+}
+
+.eventbg{
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;}

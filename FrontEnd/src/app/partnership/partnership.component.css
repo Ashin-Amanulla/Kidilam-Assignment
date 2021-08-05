@@ -1,0 +1,149 @@
+
+.header {
+    background: #9196da;
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+}
+
+.banner_main {
+    background: #65ccb8;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+    padding-top: 100px;
+}
+
+.text-bg h1 {
+    color: #182628;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.text-bg span {
+    color: #fdd430;
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.text-bg p {
+    color: #182628;
+    font-size: 17px;
+    line-height: 28px;
+    padding: 40px 0;
+    font-weight: 400;
+
+}
+
+.text-bg a {
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.text-bg a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.text-img figure {
+    margin: 0px;
+}
+
+.text-img figure img {
+    width:110%;
+    padding-bottom: 100px;
+}
+
+.titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    font-size: 45px;
+    color: #2c5f2dff;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0;
+}
+
+/* button  */
+
+/* button */
+
+.middle {
+    transform: translate(-0%, -30%);
+    /* text-align: center; */
+    /* align-items: center; */
+  }
+  
+  .btn {
+    background: none;
+    border: 2px solid #182628;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: #182628;
+  
+  }
+  
+  .btn:hover {
+    color: #409fd9;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #182628;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn1::before {
+    transform: scaleX(0);
+  }
+  
+  .btn2::before {
+    transform: scaleY(0);
+  }
+  
+  .btn1:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .btn2:hover::before {
+    transform: scaleY(1);
+  }
+
+  .academic{
+    justify-content: center!important    ;
+    align-items: center;
+}

@@ -1,0 +1,211 @@
+.left-icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.right-content h4 {
+  color: #232d39 !important;
+}
+
+.right-content p {
+  text-align: justify;
+  padding-right: 10px;
+}
+
+/* button */
+
+.middle {
+  transform: translate(-0%, -30%);
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #232d39;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  color: #232d39;
+  
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #232d39;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+  transform: scaleX(0);
+}
+
+.btn2::before {
+  transform: scaleY(0);
+}
+
+.btn1:hover::before {
+  transform: scaleX(1);
+}
+
+.btn2:hover::before {
+  transform: scaleY(1);
+}
+
+/* .events1{
+      background-image: url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80");
+
+    } */
+
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .caption h2,
+  .caption a {
+    font-weight: 100 !important;
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .caption h2,
+  .caption a {
+    font-weight: 200 !important;
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .caption h2,
+  .caption a {
+    font-weight: 200 !important;
+    font-size: 40px !important;
+  }
+}
+
+.caption h2
+ {
+  -webkit-animation: zoominoutsinglefeatured 80s infinite;
+  animation: zoominoutsinglefeatured 50s infinite;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.card:hover {
+  /* background-color: teal; */
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  background-color: aliceblue;
+}
+
+.card {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  transition: box-shadow 0.3s;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  padding: 50px 50px 50px 50px;
+}
+.map iframe{
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* .map iframe{
+    border-radius: 30px;
+
+
+  } */
+
+/* dropdown button  */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff, 0.7;
+  /* opacity: 0.2; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 2px;
+}
+
+.dropdown-content a {
+  color: rgb(250, 246, 246) !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 9px !important;
+  font-family: "Poppins", sans-serif !important;
+  text-transform: capitalize !important;
+  transition: all 0.5s ease-in-out;
+  align-content: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+.caption a{
+border-radius: 3px;
+  animation: myanimation 4s infinite;
+}
+
+@keyframes myanimation {
+  0% {background-color: rgb(17, 98, 131);}
+  25%{background-color:rgb(16, 44, 77);}
+  50%{background-color:rgb(17, 98, 131);}
+  75%{background-color:rgb(16, 44, 77);}
+  100% {background-color: rgb(17, 98, 131);}
+}
+
+

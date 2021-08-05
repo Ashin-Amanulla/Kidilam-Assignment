@@ -1,0 +1,67 @@
+<div class=" card-fullbody">
+
+    <div class="main-staff-header">
+        OUR TEAM
+    </div>
+
+    <!-- mainstaff  -->
+    <!-- first main  -->
+    <div class="container1">
+        <div class="col">
+            <div class="card-space-main">
+                <!-- ngfor -->
+                    <div class="father main-staff" *ngFor='let Staff of Staffs' [hidden]=!Staff.role>
+                        <div class="front other-s">
+                            <header>
+                            </header>
+                            <img alt="avatar" src="assets/images/test.jpg"> 
+                            <!-- {{Staff.image}} -->
+                            <h1 class="text1">{{Staff.name}}</h1>
+                            <h5 class="text1">
+                                {{Staff.designation}}
+                            </h5>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h5 class="text2"> {{Staff.about}}</h5>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- other staff  -->
+
+    <!-- <div class="container1"> -->
+    <div class="col">
+        <div class="card-space">
+            <!-- ngfor -->
+            <div class="father other-staff" *ngFor=' let Staff of Staffs'  [hidden]=Staff.role>
+                <div class="front other-s">
+                    <header>
+                    </header>
+                    <img alt="avatar" src="assets/images/test.jpg"> 
+                    <!-- {{Staff.image}} -->
+                    <h1 class="text1">{{Staff.name}}</h1>
+                    <h5 class="text1">
+                        {{Staff.designation}}
+                    </h5>
+                </div>
+                <div class="back">
+                    <div>
+                        <h5 class="text2"> {{Staff.about}}</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- second  -->

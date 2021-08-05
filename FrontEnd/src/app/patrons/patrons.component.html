@@ -1,0 +1,18 @@
+<section class="patrons34">
+    <div class="container">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading">
+                <h2>Meet Our <em> Patrons</em></h2>
+                <img src="assets/images/line-dec.png" alt="waves">
+            </div>
+        </div>
+
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let partner of partners">
+                <div class="b">
+                    <img src="{{partner.image}}">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>

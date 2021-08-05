@@ -1,0 +1,175 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.event-top{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(49, 46, 46);
+    height: 500px;
+}
+.head-event{
+    color: white;
+    display: flex;
+    position: absolute;
+    top:40%;
+}
+.heading{
+    font-size: 55px;
+}
+em{
+    color: #ffa781 !important;
+}
+
+  .event{
+      display: flex;
+  }
+  .events{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+  .card1{
+    margin: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    transition: 0.5s ease;
+    background-color: rgb(247, 248, 246);
+    border-radius: 5px;
+
+  }
+  .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+  }
+
+  .btn1{
+    background: none;
+    border: 1px solid #3682df;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding:5px;
+    min-width: 100px;
+    margin: 10px 10px;
+    position: relative;
+    transition: color 0.4s linear;
+    
+}
+.btn1:hover{
+    z-index: 1;
+    color: #fff;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #3682df;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.conclave{
+  margin: 30px;
+}
+.card2{
+  color: #FBF8BE;
+  background-color:  #234E70;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card2 p{
+  font-size: 1rem;
+}
+.card2-con{
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card3{
+  color:#96351E ;
+  background-color:  #DBB98F;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card3 p{
+  font-size: 1.1rem;
+}
+.prizes{
+  font-size: 20px;
+}
+.card4{
+  color: #fff;
+  background-color:  rgb(83, 197, 118);
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.card4 p{
+  font-size: 1rem;
+}
+.event-details{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+.dwnld{
+  padding: 20px;
+  margin: 50px;
+}
+
+.eventbg{
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+          
+}
+
+.code-style span{
+  color: white;
+}
+
+.card1-head span{
+  color:tomato;
+}
+.card1-head{
+  color: #ffa781;
+}
+
+.card1 img{
+  width:100%;
+  height:200px;
+  padding: 0px 10px 50px 10px;
+}
+
+.card2-con{
+  min-height:300px;
+  background-color: #533549;
+  color: white;
+
+}
+
+
+

@@ -1,0 +1,137 @@
+<!-- ***** Preloader Start ***** -->
+<!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div> -->
+<!-- ***** Preloader End ***** -->
+
+
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a  routerLink="" routerLinkActive="active"><img src="../../assets/images/ICTimage.png" width="80px" height="80px"></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a routerLink="" routerLinkActive="active">Home</a></li>
+                        <li class="scroll-to-section"><a routerLink="/about" routerLinkActive="active">About</a></li>
+                        <li class="scroll-to-section"><a routerLink="/courses" routerLinkActive="active">Courses</a>
+                        </li>
+                        <li class="scroll-to-section"><a routerLink="/events" routerLinkActive="active">Events</a>
+                        </li>
+                        <li class="scroll-to-section dropdown"><a>Offerings</a>
+                            <div class="dropdown-content">
+                                <a routerLink="/partnership" routerLinkActive="active"> Partnership</a>
+                                <a routerLink="/academic-membership" routerLinkActive="active">Academic Membership</a>
+                                <a routerLink="/corporate-membership" routerLinkActive="active"> Corporate
+                                    Membership</a>
+                            </div>
+                        </li>
+                        <li class="scroll-to-section"><a href="#contact-us">Contact</a></li>
+                        <li class="main-button"><a href="#">Sign In</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="main-banner "   id="top">
+
+    <img src="../../assets/images/wallp.jpg" width="100%">
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h2>learn from the <em>best</em></h2>
+            <div class="main-button scroll-to-section">
+                <a routerLink="/courses" routerLinkActive="active">join now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg5">
+
+<app-courses ></app-courses>
+
+
+<app-events></app-events>
+
+<app-why-us> </app-why-us>
+<app-patrons></app-patrons>
+
+
+<app-testimonials></app-testimonials>
+
+
+<!-- ***** Contact Us Area Starts ***** -->
+<section class="section" id="contact-us">
+    <div class="container-fluid" [@goals] >
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div id="map" class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15781.629411719601!2d76.882139!3d8.55677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a237b1a5fa40a39!2sICT%20Academy%20of%20Kerala!5e0!3m2!1sen!2sin!4v1626453253391!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="contact-form">
+                    <form id="contact" [formGroup]="newenquiryForm" (ngSubmit)='newEnquiry()'  method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text"  [(ngModel)]="enquiryForm.name"  formControlName="name" placeholder="Your Name*" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                        placeholder="Your Email*" [(ngModel)]="enquiryForm.email"  formControlName="email"required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="subject" type="text" id="subject" [(ngModel)]="enquiryForm.subject"  formControlName="subject" placeholder="Subject">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" id="message" [(ngModel)]="enquiryForm.message"  formControlName="message" placeholder="Message"
+                                        required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+<app-footer></app-footer>

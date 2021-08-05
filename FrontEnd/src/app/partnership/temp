@@ -1,0 +1,38 @@
+
+<div class="container1">
+    <div class="row">
+
+
+        <div class=" col-6 details ">
+
+            <h1>Join the ICTK Partner Program</h1>
+            <p>As an ICTK partner, You will get a fantabulous oppurtunity to handhold nation building process</p>
+            <div class="row">
+                <div class="col-md-6 proposal ">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="txt-center ">Downlod Partnership Proposal</h2>
+                    </div> <br>
+                    <div class="d-flex justify-content-center">
+                        <a role="button" href="https://ictkerala.org/wp-content/uploads/2020/06/ICTAK-TSP-002-1.pdf"
+                            class="btn btn-apply">Download</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 proposal ">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="text-center ">Be Our Partner</h2>
+                    </div> <br>
+                    <div class="d-flex justify-content-center">
+                        <a role="button"
+                            href="https://docs.google.com/forms/d/1H-UmE62LByyHqlzq88Ozn9bUqaxc08G9ne70c-Tiun4/edit"
+                            class="btn btn-apply">Register Here</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class=" col-6 img1 ">
+        </div>
+    </div>
+</div>

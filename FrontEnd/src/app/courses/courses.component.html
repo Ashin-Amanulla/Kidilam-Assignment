@@ -1,0 +1,41 @@
+<section class="section" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Our <em> Courses</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves">
+                </div>
+            </div>
+            <div id="courses-wrapper">
+
+                <!-- row -->
+                <div class="row">
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6"  *ngFor=' let Course of Courses' [hidden]="Course.index > 3">
+                        <div class="course">
+                            <a type="button" (click)="getCourse(Course)" class="course-img" >
+                                <img src="assets/images/{{Course.course_image}}" alt="">
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a type="button" class="course-title" (click)="getCourse(Course)">{{Course.course_title}}</a>
+
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+
+
+                </div>
+                <!-- /row -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="middle">
+        <button (click)="getCoursePage()" class="btn btn1 ">More</button>
+    </div>
+</section>

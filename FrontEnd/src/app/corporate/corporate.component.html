@@ -1,0 +1,120 @@
+<app-head-nav></app-head-nav>
+<div class="academic">
+    <section class="banner_main">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="text-bg">
+                        <h1>Corporate<br> Membership</h1>
+                        <p>ICT Academy of Kerala is pleased to offer ‘ICTAK Corporate Membership’ to a select set of
+                            leading organizations in the country. Through this membership, ICTAK would like to unlock
+                            the value of a Corporate – Academia collaboration through its wide network of corporate and
+                            academic partners. </p>
+                        <div class="middle">
+                            <button (click)="corporateForm()" class="btn btn1 ">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="text-img">
+                        <figure><img src="assets/images/poly-hand.png" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+    <!-- Hosting -->
+    <div id="" class="hosting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>About The Program</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="web_hosting">
+                        <figure><img src="assets/images/corporate1.jpg" height="600px" width="600px"
+                                style="border-radius: 2px;" alt="#" /></figure>
+                        <p>The industry membership programme will be offered based on an internal accreditation process
+                            and shall be valid for three years. The membership will be free for selected industry
+                            partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Hosting -->
+    <!-- counter  -->
+    <section class="counters">
+        <div class="row ">
+            <div class="col-3">
+                <i class="fa fa-seedling fa-4x"></i><br><br>
+                <div class="counter" data-target="60000">{{roboticpro}}</div><br>
+                <h3>Faculty Development Program</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-file-code-o fa-4x"></i><br><br>
+                <div class="counter" data-target="15000">{{fullstack}}</div><br>
+                <h3>Full Stack Development</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-line-chart fa-4x"></i><br><br>
+                <div class="counter" data-target="9000">{{datascience}}</div><br>
+                <h3>Sales Force</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-gears fa-4x"></i><br><br>
+                <div class="counter" data-target="5000">{{digitalmark}}</div><br>
+                <h3>Micro Skills</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- counter ends -->
+
+    <!-- why -->
+    <div id="why" class="why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Why you should choose </h2>
+                    </div>
+                </div>
+            </div>
+
+            <app-corporate-card></app-corporate-card>
+        </div>
+    </div>
+    <!-- end why -->
+
+    <!-- partners -->
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6  first-box">
+                    <h1> Meet our Technology Partners |</h1>
+                </div>
+
+                <div class="col-6 second-box">
+                    <div class="row1">
+                        <div *ngFor="let partner of partners" class="b">
+                            <img src={{partner}}>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<app-footer></app-footer>

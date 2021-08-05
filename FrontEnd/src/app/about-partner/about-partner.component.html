@@ -1,0 +1,15 @@
+<section id="clients" class="section-bg">
+    <div class="container">
+        <div class="section-header">
+            <h3>Our Partners</h3>
+        </div>
+        <div  class="row no-gutters clients-wrap clearfix wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp;">
+            <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let partner of partners">
+                <div class="client-logo">
+                    <img src="{{partner.image}}"  alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

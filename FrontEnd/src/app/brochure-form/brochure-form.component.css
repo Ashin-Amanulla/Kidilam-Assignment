@@ -1,0 +1,99 @@
+.course-title-name
+{
+    /* font-family: fantasy; */
+   color:#1d2671;
+   /* background-image: linear-gradient(to right, #c33764, #1d2671); */
+}
+
+.form-label{
+    color:#AD1457;
+    font-weight: bold;   
+    text-indent: 1em;  
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .balloonError {
+    display: table;
+    position: relative;
+    background-color: #F8E0E0;
+    color: #DF0101;
+    border: 2px solid #DF0101;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonError::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonError:before {
+    border-top-color: #DF0101;
+    top: 45px;
+  }
+  .balloonError:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }
+
+    
+  .balloonWarning {
+    display: table;
+    position: relative;
+    color: #FF7043;
+    background-color: #FBE9E7;
+    border: 2px solid #FF7043;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonWarning::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonWarning:before {
+    border-top-color:#FF7043;
+    top: 45px;
+  }
+  .balloonWarning:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }
+  
+  .balloonStrong {
+    display: table;
+    position: relative;
+    color: #044903;
+    background-color: #e6ffe6;
+    border: 2px solid #044903;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonStrong::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonStrong:before {
+    border-top-color: #044903;
+    top: 45px;
+  }
+  .balloonStrong:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }

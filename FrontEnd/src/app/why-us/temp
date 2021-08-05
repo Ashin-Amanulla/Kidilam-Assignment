@@ -1,0 +1,196 @@
+        <!-- row -->
+        <div class="row">
+
+
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fa fa-handshake-o"></i>
+                    <div class="feature-content">
+                        <h4>Support</h4>
+                        <p>Government supported and industry led programs</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fas fa-rupee-sign"></i>
+                    <div class="feature-content">
+                        <h4>Scholorships</h4>
+                        <p>Government scholarships and affordable fees model</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fas fa-university"></i>
+                    <div class="feature-content">
+                        <h4>Services</h4>
+                        <p>One-stop shop for Students, Unemployed and Working professionals</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+        </div>
+
+<br><br>
+        <!-- second row -->
+        <div class="row">
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fas fa-graduation-cap"></i>
+                    <div class="feature-content">
+                        <h4>Happy Clients</h4>
+                        <p>2500+</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fas fa-chalkboard-teacher"></i>
+                    <div class="feature-content">
+                        <h4>Experienced Faculty</h4>
+                        <p>120+</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+
+            <!-- feature -->
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="feature-icon fas fa-thumbs-up "></i>
+                    <div class="feature-content">
+                        <h4>Customer Satisfaction</h4>
+                        <p>100%</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature -->
+        </div>
+
+        <!-- /row -->
+
+
+        style
+
+
+
+
+.feature {
+  position: relative;
+}
+
+.feature+.feature {
+  margin-top: 40px;
+}
+
+.feature .feature-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  /* border: 1px solid #EBEBEB; */
+  
+  color: #253664;
+}
+
+.feature-content {
+  padding-left: 100px;
+}
+
+/* -- About Img -- */
+.about-img {
+  margin-top: 40px;
+}
+
+.about-img>img {
+  width: 100%;
+}
+
+/* -- About Video -- */
+.about-video {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.about-video>img {
+  width: 100%;
+}
+
+.about-video .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 24.027px;
+  z-index: 10;
+  -webkit-animation: 2s play-animation infinite;
+  animation: 2s play-animation infinite;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+.about-video:hover .play-icon {
+  color: #9cd2f1;
+}
+
+@-webkit-keyframes play-animation {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px #FFF;
+    box-shadow: 0px 0px 0px 0px #FFF;
+  }
+
+  to {
+    -webkit-box-shadow: 0px 0px 0px 10px transparent;
+    box-shadow: 0px 0px 0px 10px transparent;
+  }
+}
+
+@keyframes play-animation {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px #FFF;
+    box-shadow: 0px 0px 0px 0px #FFF;
+  }
+
+  to {
+    -webkit-box-shadow: 0px 0px 0px 10px transparent;
+    box-shadow: 0px 0px 0px 10px transparent;
+  }
+}
+
+.about-video:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #8dc4e4;
+  opacity: 0.7;
+}
+        

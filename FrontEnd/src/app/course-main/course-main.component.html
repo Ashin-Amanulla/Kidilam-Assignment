@@ -1,0 +1,157 @@
+<app-head-nav></app-head-nav>
+<!-- ***** Call to Action Start ***** -->
+<section class="bg3">
+    <section class="section " id="call-to-action">
+        <div class="container1">
+            <div class="row">
+                <div class="cta-content">
+                    <h1 class="course-head"><code class="code-style">ourCourses<span>();</span></code></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- binitta -->
+
+
+
+    <span>
+        <div style='color: #311B92;  padding:5px;'>
+            <h3 style=" text-align: center; font-family : cursive;">{{alertMsg}}</h3>
+        </div>
+    </span>
+
+    <div class="container2">
+        <div class=" first-row">
+            <div class="col-lg-9 cat_buttons">
+                <!-- radio button -->
+
+                <div class="controls">
+                    <div *ngFor="let cat of categories" class=" radii" (mousedown)="querycategory=cat">
+                        <label class="radio hover-underline-animation">
+                            <input type="radio" name="foo" value=i++>
+                            <h5 class="cat_head"> {{cat}}</h5>
+                        </label>
+                    </div>
+                </div>
+
+
+                <!-- radio button ends  -->
+
+            </div>
+
+
+            <!-- search button -->
+
+            <div class="col-lg-3">
+
+                <div class="form">
+                    <input type="text" [(ngModel)]="query" id="listSearch">
+                    <a class="search-icon" (onclick)='SearchClik()'> <i class="fa fa-search"></i> </a>
+                </div>
+            </div>
+            <!-- search button ends  -->
+        </div>
+
+        <div class="container-fluid p-0 m-0 g-0 mt-3">
+            <div class="row p-0 m-0 g-0">
+                <div class="col-lg-9 ">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                        <div  style="margin-bottom: 50px;" fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="100%"
+                            *ngFor="let course of Courses | searchFilter: query | category : querycategory;  let i = index;">
+                            <div *ngIf="!((i%2)==0)" class="card text-center" style="width: 18rem;  ">
+
+                                <div class="card-img-wrapper">
+                                    <img class="card-img-top" src="assets/images/{{course.course_image}}"
+                                        alt="Card image cap">
+                                </div>
+                                <div class="card-body ">
+                                    <h3 class="card-title text-center display-1" style="color: #007FFF;">
+                                        <b>{{course.course_title}}</b>
+                                    </h3>
+                                    <p class="card-text text-left">{{course.course_short_desc}}<a type="button"
+                                            (click)="getCourse(course)" class="card-text "
+                                            style='text-decoration: none; color: #007FFF'><strong>View
+                                                Course</strong></a>
+                                    </p>
+                                    <a href="#" class="btn btn-primary btn-purple" role="button"
+                                        *ngIf='!(course.Reg_Status==0)' data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">Register Now</a>
+                                </div>
+
+                                <div class="card-badge" *ngIf='(course.Reg_Status==1)'><strong>Admissions Open</strong>
+                                </div>
+                                <div class="card-badge2" *ngIf='(course.Reg_Status==0)'><strong>Admissions
+                                        Closed</strong>
+                                </div>
+                            </div>
+
+                            <div *ngIf="((i%2)==0)" class="card text-center" style="width: 18rem; ">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img-top" src="assets/images/{{course.course_image}}"
+                                        alt="Card image cap">
+                                </div>
+                                <div class="card-body ">
+                                    <h3 class="card-title text-center display-1"><b
+                                            style="color: #007FFF;">{{course.course_title}}</b></h3>
+                                    <p class="card-text text-left" [innerHTML]="course.course_short_desc"><a type="button"
+                                            (click)="getCourse(course)" class="card-text "
+                                            style='text-decoration: none; color: #007FFF'><strong>View
+                                                Course</strong></a>
+                                    </p>
+                                    <button class="btn  btn-outline-success" type="button"
+                                        *ngIf='!(course.Reg_Status==0)' (click)="Register(course)">Register Now</button>
+                                </div>
+                                <div class="card-badge" *ngIf='(course.Reg_Status==1)'><strong>Admissions Open</strong>
+                                </div>
+                                <div class="card-badge2" *ngIf='(course.Reg_Status==0)'><strong>Admissions
+                                        Closed</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- popular course -->
+                <div class="col-lg-3">
+                    <div class='bg-custom-2'>
+                        <h1 class='text-white display-1'>&nbsp;Popular Courses</h1>
+                    </div>
+                    <!-- <a class="hvr-underline-from-center" href="">Hover Effect 5</a> -->
+                    <div class="" *ngFor="let popularCourse of popularCourses ">
+                        <table class="table"  style='width:100%;'>
+                            <a style="text-decoration:none;" class="popular_course hover-5" (click)="getCourse(popularCourse)"
+                                style='text-decoration: none;'>
+                                <tbody class="tbody-trans">
+                                    <tr>
+                                        <td class="w-25">
+                                            <img mat-card-sm-image src="assets/images/{{popularCourse.course_image}}"
+                                                alt="Learn HTML5">
+                                        </td>
+                                        <td>
+                                            <mat-card class="  ">
+
+                                                <p>{{popularCourse.course_title}}</p><br><br>
+                                                <!-- <span *ngIf='(popularCourse.Rating>=1)' class="fa fa-star checked"></span>
+                                        <span *ngIf='!(popularCourse.Rating>=1)' class="fa fa-star unchecked"></span>
+                                        <span *ngIf='(popularCourse.Rating>=2)' class="fa fa-star checked"></span>
+                                        <span *ngIf='!(popularCourse.Rating>=2)' class="fa fa-star unchecked"></span>
+                                        <span *ngIf='(popularCourse.Rating>=3)' class="fa fa-star checked"></span>
+                                        <span *ngIf='!(popularCourse.Rating>=3)' class="fa fa-star unchecked"></span>
+                                        <span *ngIf='(popularCourse.Rating>=4)' class="fa fa-star checked"></span>
+                                        <span *ngIf='!(popularCourse.Rating>=4)' class="fa fa-star unchecked"></span>
+                                        <span *ngIf='(popularCourse.Rating>=5)' class="fa fa-star checked"></span>
+                                        <span *ngIf='!(popularCourse.Rating>=5)' class="fa fa-star unchecked"></span> -->
+                                            </mat-card>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </a>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

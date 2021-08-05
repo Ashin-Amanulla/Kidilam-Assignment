@@ -1,0 +1,127 @@
+<app-head-nav></app-head-nav>
+
+<div class="course-header">
+    <h1> {{course.course_title}}</h1>
+</div>
+
+<div class="single-header ">
+    <p class='highlight text-center' *ngIf='(course.Reg_Status==1)'>Admissions Open</p>
+
+    <img src="assets/images/{{course.course_image}}">
+    <h1> About Program</h1>
+
+    <p>{{course.about_course}} </p>
+
+    <div class="middle">
+        <button class="btn btn1 " (click)="Register(course) ">Brochure</button>
+    </div>
+
+</div>
+
+<div class=" tab-included">
+
+    <!-- tabs start  -->
+
+    <div class="tabs">
+        <div class="tab-2">
+            <label for="tab2-1">Eligibility</label>
+            <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+            <div [innerHTML]="course.eligibility">
+
+            </div>
+        </div>
+
+        <div class="tab-2">
+            <label for="tab2-2">Entrance</label>
+            <input id="tab2-2" name="tabs-two" type="radio">
+            <div>
+                <div [innerHTML]="course.entrance_details">
+                </div>
+                <a type="button" (click)="download()" style='text-decoration: none; color: #383537'><strong>Download
+                        Sample Question Paper Here</strong></a>
+            </div>
+        </div>
+
+        <div class="tab-2">
+            <label for="tab2-3">Course Fee</label>
+            <input id="tab2-3" name="tabs-two" type="radio">
+            <div>
+                <div [innerHTML]="course.course_fee"></div>
+
+                <h3 style="color: #AD1457;"><strong>Refund Policy</strong></h3>
+                <div class='content-dispaly' [innerHTML]="course.refund_policy"></div>
+            </div>
+        </div>
+
+        <div class="tab-2" *ngIf="(!(course.dates=='') && (course.dates))">
+            <label for="tab2-4">Dates</label>
+            <input id="tab2-4" name="tabs-two" type="radio" checked="checked">
+            <div [innerHTML]="course.dates">
+
+            </div>
+        </div>
+    </div>
+    <!-- //carosal  -->
+    <div class="course-testimonial">
+
+        <div *ngIf="!(testimonals.length==0)">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item" *ngFor="let result of testimonals; let i = index"
+                        [ngClass]="{'active': i === 1}">
+                        <div class="card border-0 card-0">
+                            <div class="card profile py-3 px-4 ">
+                                <div class="text-center"> <img src="assets/testimonials/{{result.image}}"
+                                        class="img-fluid profile-pic"> </div>
+                                <h3 class="mb-0 mt-2">{{result.name}}</h3> <small>{{result.position}}</small>
+                                <small>{{result.organisation}}</small>
+                            </div>
+                            <img class="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20"
+                                height="20">
+                            <div class="content mb-0" [innerHTML]="result.testimony"></div>
+                            <img class="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20"
+                                height="20">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial ends  -->
+</div>
+<!-- partner  -->
+<section>
+    <div class="container">
+        <div class="row partner-down">
+            <div class="col-6 partners1">
+                <h1> Partnership |</h1>
+
+            </div>
+            <div class="col-6 partners-pic">
+                <div class="b">
+                    <img src={{course.sponser_partner}}>
+                    <img src={{course.knowledge_partner}}>
+                    <img src={{course.internship_partner}}>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</section>
+
+<app-footer> </app-footer>

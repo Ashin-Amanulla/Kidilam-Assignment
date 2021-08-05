@@ -1,0 +1,47 @@
+.b>img,
+.b {
+  width: 250px;
+  height: 180px;
+  margin: 10px 10px;
+  margin-top: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+  /* box-shadow: 3px 3px 5px 6px rgb(150, 149, 149); */
+
+}
+
+.patrons34{
+  background-color: rgb(245, 248, 250);
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+}
+
+
+/* services section end */
+/* heading */
+
+.section-heading {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 150px;
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #007FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-heading h2 em {
+  font-style: normal;
+  color: #232d39;
+}
+
+.section-heading img {
+  margin: 20px auto;
+}

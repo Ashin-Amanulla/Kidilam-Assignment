@@ -1,0 +1,171 @@
+<section class="bg-dark" style='background-image: linear-gradient(to right, #c33764, #1d2671);'>
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col">
+                <div class="card card-registration my-4" style="height: 65rem;">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/img4.jpg"
+                                alt="Sample photo" class="img-fluid"
+                                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height :65rem;" />
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                                <h1 class="mb-5 text-center course-title-name"><strong> Registration Form</strong></h1>
+                                <span id="registerAlertMsg" *ngIf="RegisterError.error">
+                                    <div style='color: #D81B60;  padding:5px;'>
+                                        <h3 style=" text-align: center; font-family : cursive;">
+                                            {{RegisterError.errorMsg}}</h3>
+                                    </div>
+                                </span>
+
+                                <form novalidate #RegisterForm="ngForm"
+                                    (ngSubmit)="RegisterForm.form.valid && Register()">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-1">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form3Example1m">First Name</label><label
+                                                    class="text-danger">&nbsp;* </label>
+                                                <span
+                                                    *ngIf="(fname.invalid && (fname.dirty || fname.touched|| submitted))"
+                                                    class='balloonError'>
+                                                    <div *ngIf="fname.errors?.required">
+                                                        <p>First name is required</p>
+                                                    </div>
+                                                </span>
+                                                <input type="text" class="form-control form-control-lg" name="b_fname"
+                                                    id="fname" #fname="ngModel" [(ngModel)]="CourseRegstrn.firstname"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-1">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form3Example1n">Last Name</label><label
+                                                    class="text-danger">&nbsp;* </label>
+                                                <span
+                                                    *ngIf="(lname.invalid && (lname.dirty || lname.touched|| submitted))"
+                                                    class='balloonError'>
+                                                    <div *ngIf="lname.errors?.required">
+                                                        <p>Last name is required</p>
+                                                    </div>
+                                                </span>
+                                                <input type="text" name="b_lname" id="lname" #lname="ngModel"
+                                                    [(ngModel)]="CourseRegstrn.lastname" required
+                                                    class="form-control form-control-lg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-1">
+                                        <label class="form-label" for="form3Example9">Phone Number</label><label
+                                            class="text-danger">&nbsp;* </label>
+                                        <span *ngIf="(phno.invalid && (phno.dirty || phno.touched|| submitted))"
+                                            class='balloonError'>
+                                            <div *ngIf="phno.errors?.required">
+                                                <p>Phone Number is required</p>
+                                            </div>
+                                            <div *ngIf="phno.errors?.pattern">
+                                                <p>Invalid Phone Number</p>
+                                            </div>
+                                        </span>
+                                        <input type="text" name="b_phno" id="loginEmail" #phno="ngModel"
+                                            pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                                            [(ngModel)]="CourseRegstrn.phoneno" required
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                    <div class="form-outline mb-1">
+                                        <label class="form-label" for="form3Example90">Email</label><label
+                                            class="text-danger">&nbsp;* </label>
+                                        <span *ngIf="(email.invalid && (email.dirty || email.touched|| submitted))"
+                                            class='balloonError'>
+                                            <div *ngIf="email.errors?.required">
+                                                <p>Email is required</p>
+                                            </div>
+                                            <div *ngIf="email.errors?.pattern">
+                                                <p>Invalid Email ID</p>
+                                            </div>
+                                        </span>
+                                        <input type="text" name="b_email" id="loginEmail" #email="ngModel"
+                                            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                                            [(ngModel)]="CourseRegstrn.emailaddress" required
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                    <div class="form-outline mb-1">
+                                        <label class="form-label" for="form3Example99">Course</label><label
+                                            class="text-danger">&nbsp;* </label>
+                                        <input type="text" name="course_name" id="cname" #cname="ngModel"
+                                            [(ngModel)]="CourseRegstrn.course_title" readonly
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                    <fieldset class="form-group" [(ngModel)]="CourseRegstrn.employed">
+                                        <div class="row">
+                                            <legend class="col-form-label col-sm-4 pt-0"
+                                                style='color:#AD1457;font-weight: bold;text-indent: 1em;'>Are you
+                                                employed?<label class="text-danger">* </label></legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios"
+                                                        id="gridRadios1" value="1" [(ngModel)]="CourseRegstrn.employed">
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                        Yes
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios"
+                                                        id="gridRadios2" value="0" [(ngModel)]="CourseRegstrn.employed">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                        No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <br>
+                                    <div class="form-outline mb-1">
+                                        <label class="form-label" for="form3Example90">Highest Degree</label><label
+                                            class="text-danger">&nbsp;* </label>
+                                        <span
+                                            *ngIf="(graduation.invalid && (graduation.dirty || graduation.touched|| submitted))"
+                                            class='balloonError'>
+                                            <div *ngIf="graduation.errors?.required">
+                                                <p>Highest Degree is required</p>
+                                            </div>
+                                        </span>
+                                        <input type="text" name="graduation" id="grdn" #graduation="ngModel"
+                                            [(ngModel)]="CourseRegstrn.graduation" required
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                    <div class="form-outline mb-1">
+                                        <label class="form-label" for="form3Example97">Message</label><label
+                                            class="text-danger">&nbsp;* </label>
+                                        <span
+                                            *ngIf="(message.invalid && (message.dirty || message.touched|| submitted))"
+                                            class='balloonError'>
+                                            <div *ngIf="message.errors?.required">
+                                                <p>Message is required</p>
+                                            </div>
+                                        </span>
+                                        <textarea class="form-control" id="msg" name="message" #message="ngModel"
+                                            rows="3" [(ngModel)]="CourseRegstrn.message" required></textarea>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <!-- <button type="button" class="btn btn-light btn-lg">Reset all</button> -->
+                                        <button type="submit" class="btn btn-success btn-lg ms-2"
+                                            (mousedown)="submitted=true">Submit Form</button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

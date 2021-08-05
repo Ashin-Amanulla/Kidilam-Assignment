@@ -90,15 +90,21 @@
   height: 200px;
   position: relative;
   bottom: 50px;
-  border-radius: 50%;
+  border-radius: 4px;
+  /* border-radius: 50%; */
+  object-fit:fill;
+  border-radius: 4px;
+
 }
 
 .main-s img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  /* border-radius: 50%; */
   position: relative;
   bottom: 50px;
+  object-fit:fill;
+
 }
 
 .front h3 {

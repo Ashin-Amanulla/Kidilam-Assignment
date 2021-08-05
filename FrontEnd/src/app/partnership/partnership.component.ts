@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class PartnershipComponent implements OnInit {
 
+
+
   constructor(    private router: Router,
     ) { }
 
@@ -17,6 +19,12 @@ export class PartnershipComponent implements OnInit {
 
   partnerForm(){
     this.router.navigate(['/partnerForm']);
+  }
+
+  goTopdf(){
+    window.open('https://ictkerala.org/wp-content/uploads/2020/06/ICTAK-TSP-002-1.pdf', "_blank");
+
+
   }
 
 }

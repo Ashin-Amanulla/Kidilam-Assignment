@@ -11,10 +11,10 @@
             <div class="card-space-main">
                 <!-- ngfor -->
                     <div class="father main-staff" *ngFor='let Staff of Staffs' [hidden]=!Staff.role>
-                        <div class="front other-s">
+                        <div class="front main-s">
                             <header>
                             </header>
-                            <img alt="avatar" src="assets/images/test.jpg"> 
+                            <img alt="avatar"  src="assets/images/{{Staff.image}}"> 
                             <!-- {{Staff.image}} -->
                             <h1 class="text1">{{Staff.name}}</h1>
                             <h5 class="text1">
@@ -44,7 +44,7 @@
                 <div class="front other-s">
                     <header>
                     </header>
-                    <img alt="avatar" src="assets/images/test.jpg"> 
+                    <img alt="avatar" src="assets/images/{{Staff.image}}"> 
                     <!-- {{Staff.image}} -->
                     <h1 class="text1">{{Staff.name}}</h1>
                     <h5 class="text1">

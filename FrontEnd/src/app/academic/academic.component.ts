@@ -91,4 +91,9 @@ export class AcademicComponent implements OnInit {
     }
   }, 10)
 
+
+  goToEx(){
+    window.open('https://ictkerala.org/members/', "_blank");
+
+  }
 }

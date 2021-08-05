@@ -178,7 +178,7 @@
         <!-- submit -->
         <br><br>
         <input class="button-primary" type="submit"
-            value="Submit">
+            value="Submit" [disabled]="addCorporateForm.pristine || addCorporateForm.invalid">
     </form>
 </div>
 

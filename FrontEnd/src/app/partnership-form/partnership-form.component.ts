@@ -55,9 +55,13 @@ export class PartnershipFormComponent implements OnInit {
     }
   )
 
+  
+
 
 
   addPartner() {
+
+    
     
     this.PartnershipForm.newPartner(this.partner)
       .subscribe(

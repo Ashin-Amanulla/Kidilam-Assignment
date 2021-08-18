@@ -1,25 +1,33 @@
-.add1{
-    display: flex;
-    justify-content: center;
+.add1 {
+  display: flex;
+  justify-content: center;
 }
-.add1 h1{
-    font-size: 25px;
-    letter-spacing: 4px;
-    margin: 50px 0px 50px 0px ;
+.add1 h1 {
+  font-size: 25px;
+  letter-spacing: 4px;
+  margin: 50px 0px 50px 0px;
+  color: rgb(19, 18, 18);
 }
 
-.box1{
-    height:100px !important;
+.box1 {
+  height: 100px !important;
 }
 
 input.ng-pristine {
-    border-color:yellow;
+  border-color: yellow;
 }
 
 input.ng-touched.ng-invalid {
-    border-color:red;
+  border-color: red;
 }
 
 input.ng-touched.ng-valid {
-    border-color:green;
+  border-color: green;
+}
+
+.section1 {
+  background-color: whitesmoke;
+  background-image: url(https://svg-clipart.com/svg/grey/YMpjuWa-grey-background-facebook-3-vector.svg);
+  object-fit:fill;
+  background-repeat: no-repeat;
 }

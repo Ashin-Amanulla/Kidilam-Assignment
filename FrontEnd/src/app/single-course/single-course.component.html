@@ -7,7 +7,7 @@
 <div class="single-header ">
     <p class='highlight text-center' *ngIf='(course.Reg_Status==1)'>Admissions Open</p>
 
-    <img src="assets/images/{{course.course_image}}">
+    <img src="{{course.course_image}}">
     <h1> About Program</h1>
 
     <p>{{course.about_course}} </p>
@@ -24,18 +24,18 @@
 
     <div class="tabs">
         <div class="tab-2">
-            <label for="tab2-1">Eligibility</label>
+            <label for="tab2-1" class="tab-title">Eligibility</label>
             <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-            <div [innerHTML]="course.eligibility">
+            <div class="innerp" [innerHTML]="course.eligibility">
 
             </div>
         </div>
 
         <div class="tab-2">
-            <label for="tab2-2">Entrance</label>
+            <label for="tab2-2" class="tab-title">Entrance</label>
             <input id="tab2-2" name="tabs-two" type="radio">
             <div>
-                <div [innerHTML]="course.entrance_details">
+                <div class="innerp" [innerHTML]="course.entrance_details">
                 </div>
                 <a type="button" (click)="download()" style='text-decoration: none; color: #383537'><strong>Download
                         Sample Question Paper Here</strong></a>
@@ -43,20 +43,20 @@
         </div>
 
         <div class="tab-2">
-            <label for="tab2-3">Course Fee</label>
+            <label for="tab2-3" class="tab-title">Course Fee</label>
             <input id="tab2-3" name="tabs-two" type="radio">
             <div>
-                <div [innerHTML]="course.course_fee"></div>
+                <div class="innerp" [innerHTML]="course.course_fee"></div>
 
                 <h3 style="color: #AD1457;"><strong>Refund Policy</strong></h3>
-                <div class='content-dispaly' [innerHTML]="course.refund_policy"></div>
+                <div class="innerp"  [innerHTML]="course.refund_policy"></div>
             </div>
         </div>
 
         <div class="tab-2" *ngIf="(!(course.dates=='') && (course.dates))">
             <label for="tab2-4">Dates</label>
             <input id="tab2-4" name="tabs-two" type="radio" checked="checked">
-            <div [innerHTML]="course.dates">
+            <div class="innerp" [innerHTML]="course.dates">
 
             </div>
         </div>

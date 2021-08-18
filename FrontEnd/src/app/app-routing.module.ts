@@ -4,7 +4,6 @@ import { AboutMainComponent } from './about-main/about-main.component';
 import { CourseMainComponent } from './course-main/course-main.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { OfferingsMainComponent } from './offerings-main/offerings-main.component';
-import { CourseDetailsComponent } from './course-details/course-details.component';
 import { PartnershipComponent } from './partnership/partnership.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import { AcademicComponent } from './academic/academic.component';

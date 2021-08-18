@@ -33,7 +33,6 @@ import { AboutMainComponent } from './about-main/about-main.component';
 import { OfferingsMainComponent } from './offerings-main/offerings-main.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { CategoryPipe } from './category.pipe';
-import { CourseDetailsComponent } from './course-details/course-details.component';
 import { PartnershipComponent } from './partnership/partnership.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import { AcademicComponent } from './academic/academic.component';
@@ -65,7 +64,6 @@ import { EventsPageComponent } from './events-page/events-page.component';
     OfferingsMainComponent,
     SearchFilterPipe,
     CategoryPipe,
-    CourseDetailsComponent,
     PartnershipComponent,
     CorporateComponent,
     AcademicComponent,

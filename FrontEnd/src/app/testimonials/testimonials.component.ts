@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { HeroService } from '../hero.service';
+import { TestimonialModel } from './testimonialmodel';
 
 @Component({
   selector: 'app-testimonials',
@@ -11,9 +13,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class TestimonialsComponent implements OnInit {
 
-  constructor() { }
+  testimonials: any;
+
+
+  constructor(private hero :HeroService) { }
 
   ngOnInit(): void {
+    this.hero.gettestimonialsF().subscribe((data) => {
+      this.testimonials = data;
+    })
   }
   customOptions: OwlOptions = {
     loop: true,

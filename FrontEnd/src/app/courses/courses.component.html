@@ -16,7 +16,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6"  *ngFor=' let Course of Courses' [hidden]="Course.index > 3">
                         <div class="course">
                             <a type="button" (click)="getCourse(Course)" class="course-img" >
-                                <img src="assets/images/{{Course.course_image}}" alt="">
+                                <img src= {{Course.course_image}} alt="">
                                 <i class="course-link-icon fa fa-link"></i>
                             </a>
                             <a type="button" class="course-title" (click)="getCourse(Course)">{{Course.course_title}}</a>

@@ -9,8 +9,8 @@ export class HeroService {
 
 
   constructor(private http: HttpClient) { }
-  // server_address :string ='/api';
-  server_address: string = 'http://localhost:8887';
+  server_address :string ='/api';
+  // server_address: string = 'http://localhost:8887';
 
 
   getPartnerList() {
@@ -23,7 +23,7 @@ export class HeroService {
   };
 
   getCourse(id: any) {
-    return this.http.get(`${this.server_address}/Course/` + id);
+    return this.http.get(`${this.server_address}/Course/` + id)
   };
 
   getTestimonials(id: any) {
@@ -56,4 +56,9 @@ export class HeroService {
   getEvents() {
     return this.http.get(`${this.server_address}/EventList`)
   };
+
+  gettestimonialsF() {
+    return this.http.get(`${this.server_address}/testimonials/testy`)
+  }
+
 }

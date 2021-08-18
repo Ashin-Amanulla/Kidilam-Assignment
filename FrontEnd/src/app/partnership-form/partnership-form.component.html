@@ -1,108 +1,111 @@
 <app-head-nav></app-head-nav>
 
-<div class="container add1">
-    <h1>
-        Partnership Form
-    </h1>
-</div>
-<div class="container">
+<section class="section1">
 
-    <form [formGroup]="addPartnerForm" (ngSubmit)='addPartner()' method="POST">
-        <!-- First row -->
-        <div class="row">
-            <div class="six columns">
-                <label>
+    <div class="container add1">
+        <h1>
+            Partnership Form
+        </h1>
+    </div>
+    <div class="container">
 
-                </label>
-                <input class="u-full-width" type="text" [(ngModel)]="partner.name" name="name" placeholder="Name"
-                    formControlName="name" value="" />
+        <form [formGroup]="addPartnerForm" (ngSubmit)='addPartner()' method="POST">
+            <!-- First row -->
+            <div class="row">
+                <div class="six columns">
+                    <label>
 
+                    </label>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.name" name="name" placeholder="Name"
+                        formControlName="name" value="" />
+
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.email" name="email"
+                        placeholder=" Email" value="" formControlName="email" />
+                </div>
             </div>
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width " type="text" [(ngModel)]="partner.email" name="email" placeholder=" Email"
-                    value="" formControlName="email" />
+            <!-- Second row -->
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.phone" name="phone"
+                        placeholder=" Contact Number" value="" formControlName="phone" />
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.firm" name="firm"
+                        placeholder="Published Date" value="" formControlName="firm" />
+                </div>
             </div>
-        </div>
-        <!-- Second row -->
-        <br>
-        <div class="row">
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width" type="text" [(ngModel)]="partner.phone" name="phone"
-                    placeholder=" Contact Number" value="" formControlName="phone" />
+            <!-- third row -->
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.address" name="address"
+                        placeholder="Address" value="" formControlName="address" />
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.district" name="district"
+                        placeholder="Distict" value="" formControlName="district" />
+                </div>
             </div>
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width " type="text" [(ngModel)]="partner.firm" name="firm"
-                    placeholder="Published Date" value="" formControlName="firm" />
-            </div>
-        </div>
-        <!-- third row -->
-        <br>
-        <div class="row">
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width" type="text" [(ngModel)]="partner.address" name="address"
-                    placeholder="Address" value="" formControlName="address" />
-            </div>
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width " type="text" [(ngModel)]="partner.district" name="district"
-                    placeholder="Distict" value="" formControlName="district" />
-            </div>
-        </div>
 
-        <!-- Fourth row -->
-        <br>
-        <div class="row">
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width" type="text" [(ngModel)]="partner.officeSpace" name="officeSpace"
-                    placeholder=" Office Space in Square Feet" value="" formControlName="officeSpace" />
+            <!-- Fourth row -->
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.officeSpace" name="officeSpace"
+                        placeholder=" Office Space in Square Feet" value="" formControlName="officeSpace" />
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.employeeCount" name="employeeCount"
+                        placeholder="Number of Employees" value="" formControlName="employeeCount" />
+                </div>
             </div>
-            <div class="six columns">
-                <label>
-                </label>
-                <input class="u-full-width " type="text" [(ngModel)]="partner.employeeCount" name="employeeCount"
-                    placeholder="Number of Employees" value="" formControlName="employeeCount" />
-            </div>
-        </div>
-        <!-- textbox -->
-        <br>
-        <label>
-        </label>
-        <input class="u-full-width box1" type="text"
-            placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?"
-            [(ngModel)]="partner.report" name="report" value="" formControlName="report" />
+            <!-- textbox -->
+            <br>
+            <label>
+            </label>
+            <input class="u-full-width box1" type="text"
+                placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?"
+                [(ngModel)]="partner.report" name="report" value="" formControlName="report" />
 
-        <br><br>
-        <label>
-        </label>
-        <input class="u-full-width box1" type="text"
-            placeholder="What are you expecting in partnering with ICT academy of Kerala?" [(ngModel)]="partner.expect"
-            name="expect" value="" formControlName="expect" />
+            <br><br>
+            <label>
+            </label>
+            <input class="u-full-width box1" type="text"
+                placeholder="What are you expecting in partnering with ICT academy of Kerala?"
+                [(ngModel)]="partner.expect" name="expect" value="" formControlName="expect" />
 
-        <br><br>
-        <label>
-        </label>
-        <input class="u-full-width box1" type="text" placeholder="Brief Profile of the promoters"
-            [(ngModel)]="partner.profile" name="profile" value="" formControlName="profile" />
+            <br><br>
+            <label>
+            </label>
+            <input class="u-full-width box1" type="text" placeholder="Brief Profile of the promoters"
+                [(ngModel)]="partner.profile" name="profile" value="" formControlName="profile" />
 
 
 
-        <!-- submit -->
-        <br><br>
-        <input class="button-primary" type="submit" [disabled]="addPartnerForm.pristine || addPartnerForm.invalid"
-            value="Submit">
-    </form>
-</div>
+            <!-- submit -->
+            <br><br>
+            <input class="button-primary" type="submit" [disabled]="addPartnerForm.pristine || addPartnerForm.invalid"
+                value="Submit">
+        </form>
+    </div>
+</section>
 
 
 <app-footer></app-footer>

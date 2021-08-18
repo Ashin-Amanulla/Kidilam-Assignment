@@ -111,6 +111,9 @@ app.use('/about', staff);
 const eventList = require('./routes/event');
 app.use('/EventList',eventList)
 
+const testi = require('./routes/testimonials');
+app.use('/testimonials',testi)
+
 
 app.listen(port, () => {
     console.log("Server ready at" + port)

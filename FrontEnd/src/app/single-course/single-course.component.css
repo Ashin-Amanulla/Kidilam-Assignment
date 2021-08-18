@@ -1,5 +1,5 @@
 .course-header {
-  background-color: rgb(28, 28, 68);
+  background-color: rgb(28, 52, 68);
   text-transform: uppercase;
   align-items: center;
   display: flex;
@@ -122,11 +122,11 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #fd264f;
+  border-bottom: 1px solid #114868;
 }
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid #fd264f;
+  border-bottom: 2px solid #114868;
 }
 .tabs [class^="tab"] [type="radio"]:checked + div,
 .tabs [class*=" tab"] [type="radio"]:checked + div {
@@ -273,8 +273,21 @@ select:focus {
 /* tab container  */
 
 .tab-included{
-  background-color: blanchedalmond;
+  background-color: rgb(158, 201, 197);
   padding :100px 200px 100px 200px;
+}
+
+.innerp {
+  color :rgb(78, 80, 83);
+  font-size: 16px;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.tab-title{
+  font-size: 20px !important;
+  color: #611824 !important;
+  font-weight:600 !important;
 }
 
 .single-header img{
@@ -290,7 +303,7 @@ select:focus {
   padding-top: 100px;
   padding-bottom: 100px;
     text-align: center;
-    background-color: #ffd55a;
+    background-color: #f5f4ef;
     
   }
   

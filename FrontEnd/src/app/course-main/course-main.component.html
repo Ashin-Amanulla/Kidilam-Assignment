@@ -62,16 +62,16 @@
                             <div *ngIf="!((i%2)==0)" class="card text-center" style="width: 18rem;  ">
 
                                 <div class="card-img-wrapper">
-                                    <img class="card-img-top" src="assets/images/{{course.course_image}}"
+                                    <img class="card-img-top" src={{course.course_image}}
                                         alt="Card image cap">
                                 </div>
                                 <div class="card-body ">
-                                    <h3 class="card-title text-center display-1" style="color: #007FFF;">
+                                    <h3 class="card-title text-center display-1" style="color: #444546;">
                                         <b>{{course.course_title}}</b>
                                     </h3>
                                     <p class="card-text text-left">{{course.course_short_desc}}<a type="button"
                                             (click)="getCourse(course)" class="card-text "
-                                            style='text-decoration: none; color: #007FFF'><strong>View
+                                            style='text-decoration: none; color: #052342'><strong>View
                                                 Course</strong></a>
                                     </p>
                                     <a href="#" class="btn btn-primary btn-purple" role="button"
@@ -88,15 +88,15 @@
 
                             <div *ngIf="((i%2)==0)" class="card text-center" style="width: 18rem; ">
                                 <div class="card-img-wrapper">
-                                    <img class="card-img-top" src="assets/images/{{course.course_image}}"
+                                    <img class="card-img-top" src={{course.course_image}}
                                         alt="Card image cap">
                                 </div>
                                 <div class="card-body ">
                                     <h3 class="card-title text-center display-1"><b
-                                            style="color: #007FFF;">{{course.course_title}}</b></h3>
+                                            style="color: #444546;">{{course.course_title}}</b></h3>
                                     <p class="card-text text-left" [innerHTML]="course.course_short_desc"><a type="button"
                                             (click)="getCourse(course)" class="card-text "
-                                            style='text-decoration: none; color: #007FFF'><strong>View
+                                            style='text-decoration: none; color: #052342'><strong>View
                                                 Course</strong></a>
                                     </p>
                                     <button class="btn  btn-outline-success" type="button"
@@ -125,7 +125,7 @@
                                 <tbody class="tbody-trans">
                                     <tr>
                                         <td class="w-25">
-                                            <img mat-card-sm-image src="assets/images/{{popularCourse.course_image}}"
+                                            <img mat-card-sm-image src={{popularCourse.course_image}}
                                                 alt="Learn HTML5">
                                         </td>
                                         <td>

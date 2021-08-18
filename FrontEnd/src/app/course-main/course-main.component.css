@@ -100,6 +100,8 @@
 }
 .card-img-wrapper img {
   transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
 }
 .card:hover .card-img-wrapper img {
   transform: scale(1.15);

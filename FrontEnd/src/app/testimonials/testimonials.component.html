@@ -13,75 +13,26 @@
         <div>
             <owl-carousel-o [options]="customOptions">
 
-                <ng-template carouselSlide>
+                <ng-template carouselSlide *ngFor='let testimonial of testimonials'>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="client_img-box">
-                                <img src="assets/images/third-trainer.jpg" alt="">
+                                <img src={{testimonial.image}} alt="">
                             </div>
                         </div>
                         <div class="col-md-9">
                             <div class="client_detail-box">
                                 <h5>
-                                    Dr Subrahmaniyan
+                                    {{testimonial.name}}
                                 </h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex
-                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    {{testimonial.testimony}}
                                 </p>
                             </div>
                         </div>
                     </div>
                 </ng-template>
-                <ng-template carouselSlide>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="client_img-box">
-                                <img src="assets/images/test.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="client_detail-box">
-                                <h5>
-                                    Alex Du
-                                </h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex
-                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="client_img-box">
-                                <img src="assets/images/test.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="client_detail-box">
-                                <h5>
-                                    Alex Du
-                                </h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex
-                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </ng-template>
+
             </owl-carousel-o>
         </div>
     </div>
